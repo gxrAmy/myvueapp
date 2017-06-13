@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="baiduMusic">
     <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
@@ -7,12 +7,12 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'baiduMusic'
 }
 </script>
 
 <style>
-#app {
+#baiduMusic {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
