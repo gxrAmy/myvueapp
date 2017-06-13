@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <mt-header fixed title="百度云音乐"></mt-header>
+    <mt-header fixed title="百度云音乐">
+      <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
   </div>
 </template>
 
