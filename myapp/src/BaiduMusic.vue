@@ -1,7 +1,8 @@
 <template>
   <div id="baiduMusic">
+    <h2>好久不见 HOW ARE YOU</h2>
     <router-view></router-view>
-
+    
     <mt-tab-container v-model="active">
       <mt-tab-container-item id="tab-container1">
         <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
@@ -34,6 +35,7 @@
     我的
   </mt-tab-item>
 </mt-tabbar>
+   
   </div>
  
 </template>
