@@ -1,2 +1,2 @@
-# myvue
+# myvueapp
 my doing vue project
