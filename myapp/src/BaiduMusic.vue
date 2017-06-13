@@ -2,6 +2,7 @@
   <div id="baiduMusic">
     <img src="./assets/logo.png">
     <router-view></router-view>
+    <h1>好久不见 你好吗</h1>
   </div>
 </template>
 
