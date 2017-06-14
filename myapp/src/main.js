@@ -23,8 +23,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  template: `<div>
-  				<BaiduMusic>  </BaiduMusic>
-  			</div>`,
+  template: `<BaiduMusic>  </BaiduMusic>`,
   components: { BaiduMusic }
 })
