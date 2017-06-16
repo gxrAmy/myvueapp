@@ -1,7 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import { Button, Cell, Header, Navbar, Tabbar, TabItem, Swipe, SwipeItem, TabContainer, TabContainerItem, InfiniteScroll, Range, Search } from 'mint-ui'
+import { Button, Cell, Header, Navbar, Tabbar, TabItem, Swipe, SwipeItem, TabContainer, TabContainerItem, InfiniteScroll, Range, Search, MessageBox } from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import BaiduMusic from './BaiduMusic'
 import router from './router'

@@ -6,6 +6,8 @@ import search from '@/components/search'
 import user from '@/components/user'
 import MusicPlay from '@/components/MusicPlay'
 import SingerShow from '@/components/SingerShow'
+import login from '@/components/login'
+import register from '@/components/register'
 
 Vue.use(Router)
 
@@ -40,6 +42,16 @@ export default new Router({
       path: '/SingerShow/:id',
       name: 'SingerShow',
       component: SingerShow
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
     }
   ]
 })
