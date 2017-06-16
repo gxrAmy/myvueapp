@@ -4,6 +4,8 @@ import HelloMusic from '@/components/HelloMusic'
 import HelloSinger from '@/components/HelloSinger'
 import search from '@/components/search'
 import user from '@/components/user'
+import MusicPlay from '@/components/MusicPlay'
+import SingerShow from '@/components/SingerShow'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/user',
       name: 'user',
       component: user
+    },
+    {
+      path: '/MusicPlay/:id',
+      name: 'MusicPlay',
+      component: MusicPlay
+    },
+    {
+      path: '/SingerShow/:id',
+      name: 'SingerShow',
+      component: SingerShow
     }
   ]
 })

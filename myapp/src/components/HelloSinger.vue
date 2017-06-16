@@ -8,24 +8,42 @@
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
     </div>
-    <div class="singerShow">
-      这块是展示歌手的板块
-    </div>
-    <div class="singerList">
-      ==========
-      这块展示歌手分类列表
+    <div class="singerss">
+      <h2>推荐歌手</h2>
+      <ul>
+        <li v-for="item in singerList">
+          <router-link :to="{ name:'SingerShow', params:{id:item.ting_uid} }">
+            <img :src="item.avatar_s180" alt="">
+          </router-link>
+          <p> {{ item.name }} </p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import jsonp from "jsonp";
+import Vue from "vue";
+
 export default {
-  name: 'hello',
+  name: 'HelloSinger',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      singerList:[] 
     }
-  }
+  },
+  created(){
+    //alert(1111111111);
+    // 搜索歌手接口地址： http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.artist.getInfo&tinguid=877578
+    Vue.axios.get("../../static/singerList.json").then((res)=> {
+        //console.log(res.data);
+        this.singerList = res.data;
+        //console.log(this.singerShow);
+      })
+    }
+
+
 }
 </script>
 
@@ -35,18 +53,19 @@ h1, h2 {
   font-weight: normal;
 }
 
-ul {
-  list-style-type: none;
+ul,li{
+  list-style: none;
   padding: 0;
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 a {
+  text-decoration:none;
   color: #42b983;
 }
 .helloSinger a{color:#fff;}
+.singerss h2{height:1.4rem;font-size:0.7rem;font-weight:800;line-height:1.4rem;background:#87CEFF;color:#666;}
+.singerss ul{display:flex;flex-wrap:wrap;justify-content:space-around;}
+.singerss ul li{width:43%;margin:0.2rem 0;}
+.singerss ul li img{width:100%;border-radius:0.6rem;}
+.singerss ul li p{font-size:0.4rem;}
 </style>

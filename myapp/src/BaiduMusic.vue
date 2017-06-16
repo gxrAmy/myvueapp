@@ -4,10 +4,30 @@
     <router-view>  </router-view>
   </div>
   <ul id="foottab">
-    <li> <router-link to="/"> song </router-link> </li>
-    <li> <router-link to="/singer"> singer </router-link> </li>
-    <li> <router-link to="/search"> search </router-link> </li>
-    <li> <router-link to="/user"> user </router-link> </li>
+    <router-link to="/">
+      <li>
+        <i class="iconfont icon-shouye"></i>
+        <span>song</span>
+      </li>
+    </router-link>
+    <router-link to="/singer">
+      <li>
+        <i class="iconfont icon-geshou"></i>
+        <span>singer</span>
+      </li>
+    </router-link>
+    <router-link to="/search">
+      <li>
+        <i class="iconfont icon-ge"></i>
+        <span>search</span> 
+      </li>
+    </router-link>
+    <router-link to="/user">
+      <li>
+        <i class="iconfont icon-geren"></i>
+        <span>user</span>
+      </li>
+    </router-link>
   </ul>
 </div>
 </template>
@@ -40,10 +60,11 @@ html{font-size:15.625vw;}
   flex:1;
   overflow:auto;
 }
-#box #baiduMusic h1{font-size:0.46rem;font-weight:800;}
+#baiduMusic h1{font-size:0.46rem;font-weight:800;}
 #foottab{display:flex;height:0.98rem;justify-content:space-around;align-items:center;}
-#foottab li{display:flex;flex-direction:column;justify-content:space-around;align-items:center;font-size:0.4rem;width:100%;height:100%;background:#4876FF;}
-#foottab li a{color: #fff;}
-
+#foottab a{width:25%;height:0.98rem;}
+#foottab a li{display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:0.4rem;width:100%;height:100%;background:#4876FF;}
+#foottab a li i{width:0.4rem;height:0.4rem;font-size:0.4rem;color:#fff;}
+#foottab a li span{color:#fff;}
 
 </style>
