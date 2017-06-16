@@ -57,9 +57,9 @@ export default {
         if(username == this.userName && password == this.passWord){
           this.flag = false;
           localStorage.userLogin = '{"userName":"' + this.userName + '","passWord":"' + this.passWord + '"}';
-          console.log("登陆成功");
-          MessageBox('恭喜', '登录成功')
-          location.href = "/#/user";
+          //console.log("登陆成功");
+          MessageBox('恭喜', '登录成功,请您切换到user页')
+          //location.href = "/#/user";
         }else{
           this.flag = true;
         }
@@ -76,13 +76,11 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-
 ul,li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 a {
   color: #42b983;
 }

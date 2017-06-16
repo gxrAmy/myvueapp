@@ -7,21 +7,21 @@
         </mt-button>
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
-      <p class="divP1">&gt; {{ biaoti }} &lt;</p>
+      <p class="divP1">&gt;&nbsp;{{ biaoti }}&nbsp;&lt;</p>
       <img :src="musicImg" alt="">
     </div>
     <div class="musicShow">
       <p>
         <audio :src="playSrc" autoplay controls></audio>
-        <p class="musicShowPP1">
+        <!-- <p class="musicShowPP1">
           <mt-range v-model="rangeValue">
             <div slot="start">&nbsp;调节音量&nbsp;&nbsp;0</div>
             <div slot="end">100</div>
           </mt-range>
-        </p>
+        </p> -->
       </p>
       <p>
-        <p class="divP2">T_T 抱歉，暂时不能播放 T_T</p>
+        <!-- <p class="divP2">T_T 抱歉，暂时不能播放 T_T</p> -->
         <p>
           <a :href="tzHref">
             <mt-button type="primary" id="aBtn">点击跳转到播放</mt-button>
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-
 import jsonp from "jsonp";
 import Vue from "vue";
 
@@ -66,7 +65,6 @@ export default {
   created(){
     this.playUrl = window.location.hash.replace(/#\/MusicPlay\//g,"");
     //console.log(this.playUrl);
-
     //播放歌曲的接口地址 http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.song.play&songid=877578
     var playGetUrl = "http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.song.play&songid=" + this.playUrl;
     //console.log(playGetUrl);
@@ -83,7 +81,7 @@ export default {
         this.musicImg = data.songinfo.pic_radio;
         this.musicDoload = data.bitrate.file_link;
         this.lrclinkDoload = data.songinfo.lrclink;
-        console.log(this.musicDoload);
+        //console.log(this.musicDoload);
         this.tzHref = "http://music.baidu.com/search/" + this.musicTitle;
       }
       //console.log(this.arrTuijian);
@@ -112,13 +110,11 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-
 ul,li{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 a {
   color: #42b983;
 }

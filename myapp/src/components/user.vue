@@ -15,7 +15,7 @@
           <span>{{ userName }}</span>
         </li>
         <li class="xinxiUlli2">
-          <img src="../../static/images/img1.png" alt="">
+          <img src="../assets/img1.png" alt="">
           <input type="file" value="选择头像图片">
         </li>
         <router-link to="/"><li>我的收藏</li></router-link>
@@ -51,7 +51,7 @@ export default {
     }else{
       this.flag = false;
     }
-    console.log("created:  " + this.flag);
+    //console.log("created:  " + this.flag);
   },
   methods:{
     tuichuLogin(){

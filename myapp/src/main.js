@@ -24,7 +24,7 @@ Vue.component(Search.name, Search);
 Vue.use(VueAxios, axios);
 Vue.use(InfiniteScroll);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 /* eslint-disable no-new */
 new Vue({

@@ -47,8 +47,8 @@ export default {
       if( /\d{11}/.test(this.userName) && /\w{6,16}/.test(this.passWord) ){
         this.flag = false;
         localStorage.userRegister = '{"userName":"' + this.userName + '","passWord":"' + this.passWord + '"}';
-          MessageBox('恭喜', '注册成功');
-          location.href = "/#/login";
+          MessageBox('恭喜', '注册成功,请您切换到登录页面');
+          //location.href = "/#/login";
       }else{
         this.flag = true;
       }

@@ -7,7 +7,7 @@
         </mt-button>
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
-      <p class="divP1">&gt; {{ author }} &lt;</p>
+      <p class="divP1">&gt;&nbsp;{{ author }}&nbsp;&lt;</p>
       <img :src="authorImg" alt="">
     </div>
     <div class="musicShow">

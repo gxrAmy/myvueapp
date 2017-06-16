@@ -6,18 +6,18 @@
     </mt-header>
   </div>
   <div class="home_swiper">
-    <mt-swipe :auto="4000">
+    <mt-swipe :auto="2500">
       <mt-swipe-item>
-        <img src="../../static/images/swiper1.jpg" alt="">
+        <img src="../assets/swiper1.jpg" alt="">
       </mt-swipe-item>
       <mt-swipe-item>
-        <img src="../../static/images/swiper2.jpg" alt="">
+        <img src="../assets/swiper2.jpg" alt="">
       </mt-swipe-item>
       <mt-swipe-item>
-        <img src="../../static/images/swiper3.jpg" alt="">
+        <img src="../assets/swiper3.jpg" alt="">
       </mt-swipe-item>
       <mt-swipe-item>
-        <img src="../../static/images/swiper4.jpg" alt="">
+        <img src="../assets/swiper4.jpg" alt="">
       </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -227,9 +227,7 @@ export default {
       // }
     }
   }
-  
 }
-
 
 </script>
 

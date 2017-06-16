@@ -36,14 +36,20 @@ export default {
   created(){
     //alert(1111111111);
     // 搜索歌手接口地址： http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.artist.getInfo&tinguid=877578
-    Vue.axios.get("../../static/singerList.json").then((res)=> {
-        //console.log(res.data);
-        this.singerList = res.data;
-        //console.log(this.singerShow);
-      })
-    }
-
-
+    Vue.axios.get("static/singerList.json").then((res)=> {
+      //console.log(res.data);
+      this.singerList = res.data;
+      //console.log(this.singerShow);
+    })
+    // jsonp("static/singerList.json",null,(err,data) =>{
+    //   if(err){
+    //     console.log("啊呜，获取数据失败");
+    //   }else{
+    //     console.log(data);
+    //     this.singerList = res.data;
+    //   }
+    // })
+  }
 }
 </script>
 
@@ -52,12 +58,10 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-
 ul,li{
   list-style: none;
   padding: 0;
 }
-
 a {
   text-decoration:none;
   color: #42b983;
