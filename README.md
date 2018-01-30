@@ -1,4 +1,5 @@
 ## Welcome to GitHub Pages
+### 访问网址[地址](https://gxramy.github.io/myvueapp/MyVueApp/#/)
 
 You can use the [editor on GitHub](https://github.com/gxrAmy/myvueapp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
